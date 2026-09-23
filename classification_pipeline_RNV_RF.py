@@ -27,8 +27,8 @@ warnings.filterwarnings('ignore')
 optuna.logging.set_verbosity(optuna.logging.WARNING)
 
 
-raw_data = 'data_depr.xlsx'
-df = pd.read_excel(raw_data)
+feature_data = 'data_depr.xlsx'
+df = pd.read_excel(feature_data)
 
 X = df.drop(columns=['ID', 'Class']).values
 y = df['Class'].values
